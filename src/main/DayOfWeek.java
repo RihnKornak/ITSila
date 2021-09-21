@@ -1,21 +1,21 @@
 package main;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class DayOfWeek {
     public static void main(String[] args) {
         int day = 0;
         try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            day = Integer.parseInt(reader.readLine());
-            reader.close();
+            Scanner scanner = new Scanner(System.in);
+            day = scanner.nextInt();
+           scanner.close();
         }catch (Exception e){
             System.out.println("Что-то пошло не так.");
         }
         switch (day){
             case 1:
                 System.out.println("Понедельник");
+                break;
             case 2:
                 System.out.println("Вторник");
                 break;
